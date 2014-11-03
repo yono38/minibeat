@@ -1,0 +1,164 @@
+/* Styles */
+
+body,
+html {
+  margin:0;
+  padding:0;
+  /* Based on Chartbeat colors */
+  color: #fff;
+  background: #EFF5F9;
+  /* Chartbeat uses custom fonts, but I usually use this as an alternative to proxima nova */
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  padding: 10px;
+  background: url(bg-subheader.jpg) #23495C;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+#main-hero {
+  position: absolute;
+  background-image: url(bg-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  bottom: 0;
+  top: 112px;
+}
+
+/**
+ * Main Container 
+ */
+
+#container {
+  background-color: #203341;
+  color: #6fbcb4;
+  width: 990px;
+  margin: 75px auto 0;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+#container:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* Don't use bullets */
+#container ul {
+  list-style-type: none;
+}
+
+/**
+ * Left Column 
+ */
+
+#container > #top-pages-container {
+  float: left;
+  width: 66%;
+  border-right: 1px solid #96A2A8;
+}
+
+#container > #top-pages-container .page-wrap {
+  position: relative;
+}
+
+/* Full width so li hover doesn't look weird */
+#container > #top-pages-container > #top-pages {
+  padding-left: 0;
+}
+
+#container > #top-pages-container > #top-pages > li {
+  font-size: 28px;
+  left: 0;
+  margin: 0;
+  right: 0;
+  padding: 25px 0 3px 20px;
+  -moz-box-shadow: 0 1px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 1px rgba(0,0,0,.3);
+  box-shadow: 0 1px rgba(0,0,0,.3);
+  cursor: pointer;
+}
+
+/* Change background when hovering over clickable list item */
+#container > #top-pages-container > #top-pages > li:hover {
+  background-color: #1A2933;
+}
+
+#container > #top-pages-container > #top-pages > li .page-title-container {
+  display: block;
+  font-size: 18px;
+  width: 500px;
+}
+
+/* Make sure to truncate titles that are too long */
+#container > #top-pages-container > #top-pages > li .top-page-title {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#container > #top-pages-container > #top-pages > li .top-page-visits {
+  color: #ccdbea;
+  width: 60px;
+  position: absolute;
+  right: 10px;
+  top: -10px;
+  text-align: right;
+}
+
+/**
+ * Right Column 
+ */
+
+/* Main Wrapper */
+#container > #page-details {
+  float: right;
+  width: 33%;
+}
+
+/* Headings */
+#container > #page-details > h4, 
+#container > #page-details > h5 {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+#container > #page-details > #page-details-title {
+  padding: 0 5px;
+}
+
+/* Referrer List */
+#container > #page-details > #top-referrers-list {
+  padding-left: 10px;
+}
+
+/* Referrer List Items */
+#container > #page-details > #top-referrers-list li {
+  -moz-box-shadow: 0 1px rgba(0,0,0,.3);
+  -webkit-box-shadow: 0 1px rgba(0,0,0,.3);
+  box-shadow: 0 1px rgba(0,0,0,.3);
+  padding: 15px 0;
+}
+
+#container > #page-details > #top-referrers-list > li > .referrer-wrap {
+  position: relative;
+}
+
+#container > #page-details > #top-referrers-list > li .top-referrer-name {
+  width: 250px;
+}
+
+#container > #page-details > #top-referrers-list > li .top-referrer-visitors {
+  color: #ca4e45;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  font-size: 20px;
+}
