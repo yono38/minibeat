@@ -47,3 +47,4 @@ It should be formatted like the following wireframe:
 
  * It should work in modern (HTML5) browsers. Focus on Chrome, Firefox, and Safari. IE compatibility is nice but don't spend too much time on it.
 
+**NOTE: You need to fill in a valid chartbeat API key in cbUtils.js to run this yourself!**
