@@ -1,7 +1,7 @@
 # Chartbeat Front-end Engineering Exercise
 ## By Jason Schapiro
 
-**See the live version on [minibeat.jasonschapiro.com](minibeat.jasonschapiro.com)**
+**See the live version on [minibeat.jasonschapiro.com](http://minibeat.jasonschapiro.com)**
 
 A web app called Minibeat that shows the top ten visited pages
 for gizmodo.com, sorted by current visitor number.  Use the provided file
